@@ -1,6 +1,17 @@
 const Videos = () => {
     return (
-        <><h2>Videos</h2></>
-    )
+<div className="cuerpo-photo">
+            
+            <div><h2>videitos de la prezio prezio</h2></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            
+        </div>    )
 }
 export default Videos;

@@ -1,10 +1,21 @@
 import "../App.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
+
+    const location = useLocation();
+
+    let navBarStyle;
+    if(location.pathname === '/') {
+        navBarStyle = 'home-nav'
+    } else {
+        navBarStyle = 'other-nav'
+    }
+
+
     return (
         <>
-        <div className="NavBar">
+        <div className={`NavBar ${navBarStyle}`}>
             <Link to='/' className="txtLogo"><h2>Agus Broggia 💕</h2></Link>
             <ul className="txtMenu">
                 <li><Link to="/"> Home </Link> </li>

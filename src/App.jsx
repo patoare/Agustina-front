@@ -21,9 +21,6 @@ function App() {
         <Route path="/contact" element ={< Contact />} />
       </Routes>
       < Footer />
-      <p className="read-the-docs">
-        Agustina Broggia Site
-      </p>
     </>
   )
 }
